@@ -2,35 +2,53 @@
 <html>
 <head>
 <title>
-    Blog Template
+    dthelouie Blog
 </title>
+<link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+<link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"
+<meta charset="UTF-8">
 </head>
 <header>
-    <img src="../imgs/profile-picture.jpg"/>
+    <img id="profile-pic" src="../imgs/profile-picture.jpg"/>
     <h1>THIS IS A HEADER</h1>
-    <span>David Louie</span>
-    <span>Current Location</span>
-    <div>
-        <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+    <section>
+    <span id="name">David Louie</span>
+    <span class="location">Blog</span>
+    </section>
+    <nav>
+        <ul id="navbar">
+        <li class="odd"><a href="../index.html">Home</a></li>
+        <li class="even"><a href="#">About Me</a></li>
+        <li class="odd"><a href="#">Projects</a></li>
+        <li class="even"><a href="#">Resume</a></li>
+        <li class="odd"><a href="index.html">Blog</a></li>
+        <li class="even"><a href="#">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 </header>
   <body>
-    <h3>Recent Posts:<h3>
+    <header>
+    <h3 class="section-title">Recent Posts:</h3>
+    </header>
+      <article class="post">
+      <h4 class="post-title"><a href="git.html">Post #1: Git and Version Control</a></h4>
       <a href="git.html"><img src="../imgs/git.png"/></a>
-      <div><a href="git.html">Post #1: Git and Version Control</a></div>
-      <p>
+      <p class="post-preview">
         This week we began Phase 0 as the Squirrels 2016 cohort with Dev Bootcamp and I couldn't be more excited.  Only a week and I feel like I've learned so much already!  We learned about the Command Line Interface, Version Control, Git, GitHub, and how to use them togeher so that we can be prepared for our work in the coming weeks.
       </p>
+      </article>
   </body>
+  <aside>
+        <ul>
+           <li><a href="#">Most Recent Post</a></li>
+           <li><a href="#">Blog Post 6</a></li>
+           <li><a href="#">Blog Post 5</a></li>
+           <li><a href="#">Blog Post 4</a></li>
+           <li><a href="#">Blog Post 3</a></li>
+           <li><a href="#">Blog Post 2</a></li>
+           <li><a href="#">Blog Post 1</a></li>
+        </aside>
    <footer>
-        <hr>
             <span>
             <a href="https://www.facebook.com/david.louie"><img src="../imgs/fb.png" alt="Facebook"/></a>
                 <a href="https://www.facebook.com/david.louie">Facebook</a>

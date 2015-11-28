@@ -1,0 +1,183 @@
+html{
+	background-color: #006699;
+	font-family: Verdana;
+}
+
+#navbar{
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+header nav ul li{
+	display: inline;
+	border: 1px solid black;
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 1.5em;
+}
+
+#name{
+	display: inline;
+	left: 0;
+	float: left;
+}
+
+.location{
+	display: inline;
+	right: 0;
+	float: right;
+}
+
+nav ul li a{
+	color: #b30000;
+}
+
+nav ul li a:hover{
+	color: #990000;
+	text-decoration: none;
+}
+
+nav ul li a:visited{
+	color: #800000;
+}
+
+.even{
+	background-color: #0099ff;
+}
+
+.odd{
+	background-color: #aeb3b7;
+}
+
+#profile-pic{
+	display: inline;
+	height: 15em;
+	width: 15em;
+}
+
+header > h1 {
+	display: inline;
+	margin: 0 auto;
+	margin-top: 1em;
+	font-size: 5em;
+}
+
+#proj-head{
+	text-decoration: underline;
+	font-size: 20px;
+	float: left;
+	margin-left: 8em;
+}
+
+#post-head{
+	text-decoration: underline;
+	font-size: 22px;
+	float: right;
+	margin-right: 15em;
+}
+
+#feat-proj{
+	float: left;
+	width: 45%;
+	height: 35em;
+	border: 2px solid black;
+	background-color: #aeb3b7;
+	margin-left: 9%;
+	margin-bottom: 2em;
+	clear: left;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#recent-post{
+	float: right;
+	width: 30%;
+	height: 35em;
+	border: 2px solid black;
+	background-color: #aeb3b7;
+	margin-right: 10%;
+	margin-bottom: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.post{
+	border: 2px solid black;
+	padding: 20px;
+	float: right;
+	width: 55%;
+	margin-top: 30px;
+	margin-right: 21%;
+	clear: both;
+	margin-bottom: 20px;
+	background-color: #aeb3b7;
+}
+
+footer a img{
+	height: 50px;
+	width: 50px;
+}
+
+footer{
+	position: static;
+	clear: both;
+	border-top: 2px solid black;
+	padding-top: 1em;
+	margin-top: 50px;
+	bottom: 0;
+	text-align: center;
+}
+
+.plus-min{
+	position: relative;
+	clear: both;
+}
+
+.plus-min a{
+	color: black;
+	border: 1px solid black;
+	background-color: #aeb3b7
+}
+.plus-min a:hover{
+	color: black;
+	background-color: #c9cccf
+}
+
+#prev{
+	float: left;
+	margin-left: 20%;
+}
+
+#next{
+	float: right;
+	margin-right: 20%;
+}
+
+.post-preview{
+	font-size: 15px;
+}
+
+.section-title{
+margin-left: 15em;
+}
+
+.post-title{
+	font-size: 25px;
+	color: black;
+	text-decoration: underline;
+}
+.post-title a{
+	font-size: 25px;
+	color: black;
+}
+
+.post-date{
+	font-size: 15px;
+}
+
+
+
+
+

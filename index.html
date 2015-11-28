@@ -2,48 +2,76 @@
 <html>
 <head>
 <title>
-    Blog Template
+    dthelouie Home
 </title>
+	<link type="text/css" rel="stylesheet" href="stylesheets/default.css">
+	<meta charset="UTF-8">
 </head>
 <header>
-    <img src="../imgs/profile-picture.jpg"/>
+    <img id="profile-pic" src="imgs/profile-picture.jpg"/>
     <h1>THIS IS A HEADER</h1>
-    <span>David Louie</span>
-    <span>Current Location</span>
-    <div>
-        <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+    <section>
+    <span id="name">David Louie</span>
+    <span class="location">Home</span>
+    </section>
+    <nav id="nav">
+        <ul id="navbar">
+        <li class="odd"><a href="index.html">Home</a></li>
+        <li class="even"><a href="#">About Me</a></li>
+        <li class="odd"><a href="#">Projects</a></li>
+        <li class="even"><a href="#">Resume</a></li>
+        <li class="odd"><a href="blog/index.html">Blog</a></li>
+        <li class="even"><a href="#">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 </header>
   <body>
-      Hello Dev Bootcamp!
+      <section>
+      	<header id="proj-head">
+      		<h2>Featured Project:</h2>
+      	</header>
+      		<header id="post-head">
+      		<h3>Recent Blog Post:</h3>
+      	</header>
+      </section>
+      <section>
+      	<article  id="feat-proj">
+      			<p>
+      				insert featured project here
+      			</p>
+      		</article>
+      		<article id="recent-post">
+      			<p>
+      <article>
+      <h4 class="post-title"><a href="git.html">Post #1: Git and Version Control</a></h4>
+      <a href="blog/git.html"><img src="imgs/git.png"/></a>
+      <p class="post-preview">
+        This week we began Phase 0 as the Squirrels 2016 cohort with Dev Bootcamp and I couldn't be more excited.  Only a week and I feel like I've learned so much already!  We learned about the Command Line Interface, Version Control, Git, GitHub, and how to use them togeher so that we can be prepared for our work in the coming weeks.
+      </p>
+      </article>
+      			</p>
+      		</article>
+      </section>
   </body>
    <footer>
-        <hr>
             <span>
-            <a href="https://www.facebook.com/david.louie"><img src="../imgs/fb.png" alt="Facebook"/></a>
+            <a href="https://www.facebook.com/david.louie"><img src="imgs/fb.png" alt="Facebook"/></a>
                 <a href="https://www.facebook.com/david.louie">Facebook</a>
             </span>
             <span>
-            <a href="https://twitter.com/dthelouie"><img src="../imgs/twitter.png" alt="Twitter"/><a/>
+            <a href="https://twitter.com/dthelouie"><img src="imgs/twitter.png" alt="Twitter"/><a/>
                 <a href="https://twitter.com/dthelouie">Twitter</a>
             </span>
             <span>
-                    <a href="https://www.linkedin.com/in/david-louie-67332357"><img src="../imgs/linkedin.png" alt="LinkedIn"/><a/>
+                    <a href="https://www.linkedin.com/in/david-louie-67332357"><img src="imgs/linkedin.png" alt="LinkedIn"/><a/>
                 <a href="https://www.linkedin.com/in/david-louie-67332357">LinkedIn</a>
              </span>
              <span>
-                 <a href="https://github.com/dthelouie"><img src="../imgs/github.png" alt="GitHub"/><a/>
+                 <a href="https://github.com/dthelouie"><img src="imgs/github.png" alt="GitHub"/><a/>
                 <a href="https://github.com/dthelouie">GitHub</a>
                      </span>
             <span>
-                <a href="https://plus.google.com/101603699243756968701/posts"><img src="../imgs/google-plus.png" alt="Google+"/></a>
+                <a href="https://plus.google.com/101603699243756968701/posts"><img src="imgs/google-plus.png" alt="Google+"/></a>
                 <a href="https://plus.google.com/101603699243756968701/posts">Google+</a>
                  </span>
                 </footer>

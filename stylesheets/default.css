@@ -1,6 +1,6 @@
 html{
 	background-color: #8c8c8c;
-	font-family: Verdana;
+	font-family: sans-serif;
 }
 
 #navbar{
@@ -11,11 +11,15 @@ html{
 }
 
 header nav ul li{
-	display: inline;
+	display: inline-block;
 	border: 1px solid black;
 	margin: 0 auto;
-	padding: 5px;
 	font-size: 1.5em;
+}
+
+#fixie{
+	width: 100%;
+	position: static;
 }
 
 #name{
@@ -44,7 +48,7 @@ nav ul li a:visited{
 }
 
 .even{
-	background-color: #0099ff;
+	background-color: #80b3ff;
 }
 
 .odd{
@@ -55,6 +59,7 @@ nav ul li a:visited{
 	display: inline;
 	height: 15em;
 	width: 15em;
+	margin-top: -10em;
 }
 
 header > h1 {

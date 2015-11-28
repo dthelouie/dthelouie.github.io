@@ -4,27 +4,36 @@
 <title>
     Blog Template
 </title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"
+    <meta charset="UTF-8">
 </head>
 <header>
-    <img src="../imgs/profile-picture.jpg"/>
+    <img id="profile-pic" src="../imgs/profile-picture.jpg"/>
     <h1>THIS IS A HEADER</h1>
-    <span>David Louie</span>
-    <span>Current Location</span>
-    <div>
-        <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+    <section>
+    <span id="name">David Louie</span>
+    <span class="location">Current Location</span>
+    </section>
+    <nav>
+        <ul id="navbar">
+        <li class="odd"><a href="../index.html">Home</a></li>
+        <li class="even"><a href="#">About Me</a></li>
+        <li class="odd"><a href="#">Projects</a></li>
+        <li class="even"><a href="#">Resume</a></li>
+        <li class="odd"><a href="index.html">Blog</a></li>
+        <li class="even"><a href="#">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 </header>
 <body>
-    <div id="blog-content">
-    <h2>THIS IS A BLOG POST TITLE</h2>
-    <h3>Date</h3>
+    <main>
+        <article>
+            <section class="post">
+                <header>
+                    <h2 class="post-title">THIS IS A BLOG POST TITLE</h2>
+                    <h3 class="post-date">Date</h3>
+                </header>
     <img src="../imgs/feelsgoodman.jpg"/>
     <p>
         THIS IS THE SAME INTRODUCTORY TEXT FROM THE BLOG-INDEX PAGE. (maybe about a paragraph?)
@@ -35,31 +44,23 @@
     <p>
         PARAGRAPH 3
     </p>
-    <form>
-        <h4>Comments:</h4>
-    <input type="text" name="comment" placeholder="Enter a comment here">
-        <br>
-    <input type="submit" value="Submit">
-        </form>
-        <p>
-            THIS IS AN EXAMPLE COMMENT
-        </p>
-        <p>
-            THIS IS AN EXAMPLE COMMENT
-        </p>
-        <a href="#">Previous</a> <a href="#">Next</a>
-    </div>
-       <div id="sidenav">
-           <span><a href="#">Most Recent Post</a></span>
-           <span><a href="#">Blog Post 6</a></span>
-           <span><a href="#">Blog Post 5</a></span>
-           <span><a href="#">Blog Post 4</a></span>
-           <span><a href="#">Blog Post 3</a></span>
-           <span><a href="#">Blog Post 2</a></span>
-           <span><a href="#">Blog Post 1</a></span>
-        </div>
+        </main>
+    <body>
+       <aside>
+        <ul>
+           <li><a href="#">Most Recent Post</a></li>
+           <li><a href="#">Blog Post 6</a></li>
+           <li><a href="#">Blog Post 5</a></li>
+           <li><a href="#">Blog Post 4</a></li>
+           <li><a href="#">Blog Post 3</a></li>
+           <li><a href="#">Blog Post 2</a></li>
+           <li><a href="#">Blog Post 1</a></li>
+        </aside>
+        <nav class="plus-min">
+            <a id="prev" href="#">&lt;Previous</a>
+            <a id="next" href="#">Next&gt;</a>
+        </nav>
             <footer>
-        <hr>
             <span>
             <a href="https://www.facebook.com/david.louie"><img src="../imgs/fb.png" alt="Facebook"/></a>
                 <a href="https://www.facebook.com/david.louie">Facebook</a>

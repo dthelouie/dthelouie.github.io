@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    Blog Template
+</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <meta charset="UTF-8">
+</head>
+<header>
+    <img id="fixie" src="imgs/fixie.jpg"/>
+    <img id="profile-pic" src="../imgs/profile-picture.jpg"/>
+    <h1>THIS IS A HEADER</h1>
+    <nav>
+        <ul id="navbar">
+        <li class="odd"><a href="../index.html">Home</a></li>
+        <li class="even"><a href="#">About Me</a></li>
+        <li class="odd"><a href="#">Projects</a></li>
+        <li class="even"><a href="#">Resume</a></li>
+        <li class="odd"><a href="index.html">Blog</a></li>
+        <li class="even"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main>
+        <article>
+            <section class="post">
+                <header>
+                    <h2 class="post-title">HTML and CSS, Classes and IDs</h2>
+                    <h3 class="post-date">November 27, 2015</h3>
+                </header>
+    <img id="sublime" src="../imgs/html.jpg"/>
+    <p>
+        Two more weeks with Dev Bootcamp, and we already have our own websites!  We've learned a lot about HTML and CSS and how to use them together to begin to create websites like the ones we see every day.  It's pretty awesome that we've gotten through so much material in such a short time.  I know we've barely scratched the surface, but to think that I didn't know any of this a couple weeks ago really excites me. We learned about a few different tools and concepts in CSS this week such as the difference between margins, borders and padding, different types of positioning, display properties, and how to use classes and ids.  I'm going to be talking about classes and ids.  
+    </p>
+    <p>
+        First let's go over the difference between classes and ids.  Classes and ids are both used in CSS to refer to an element in HTML rather than going through the list of what the element is nested in.  They both go right into the opening tag of an element and can be directly manipulated by CSS properties.  The main difference between classes and ids are the way they're assigned.  A specific id can only be used on a single element, and a single element can only be assigned a single id.  Classes, on the other hand can be assigned to a set of elements that will receive the same CSS properties.  Elements can also have multiple classes.  You can even have elements with a class and an id.  
+    </p>
+    <p>
+        So that brings us to the question, "How do we know when to use each one?!"  Classes are used for applying CSS properties to multiple elements, so if you think that there's any possibility that you'll be applying the same set of changes to more than one element, you should consider making a class.  If you want a quick shortcut specific element and you'll only be applying this set of CSS properties to this element, you should use an id.  While both are very similar, they are each very useful in their own separate ways.
+    </p>
+            </section>
+        </article>
+    </main>
+    <aside>
+        <ul>
+           <li><a href="#">Most Recent Post</a></li>
+           <li><a href="#">Blog Post 6</a></li>
+           <li><a href="#">Blog Post 5</a></li>
+           <li><a href="#">Blog Post 4</a></li>
+           <li><a href="#">Blog Post 3</a></li>
+           <li><a href="css-concepts.html">Blog Post 2</a></li>
+           <li><a href="git.html">Blog Post 1</a></li>
+       </ul>
+    </aside>
+        <nav class="plus-min">
+            <a id="prev" href="#">&lt;Previous</a>
+            <a id="next" href="#">Next&gt;</a>
+        </nav>
+            <footer>
+            <span>
+            <a href="https://www.facebook.com/david.louie"><img src="../imgs/fb.png" alt="Facebook"/></a>
+            </span>
+            <span>
+            <a href="https://twitter.com/dthelouie"><img src="../imgs/twitter.png" alt="Twitter"/></a>
+            </span>
+            <span>
+                    <a href="https://www.linkedin.com/in/david-louie-67332357"><img src="../imgs/linkedin.png" alt="LinkedIn"/></a>
+             </span>
+             <span>
+                 <a href="https://github.com/dthelouie"><img src="../imgs/github.png" alt="GitHub"/></a>
+                     </span>
+            <span>
+                <a href="https://plus.google.com/101603699243756968701/posts"><img src="../imgs/google-plus.png" alt="Google+"/></a>
+                 </span>
+                </footer>
+    </body>
+</html>

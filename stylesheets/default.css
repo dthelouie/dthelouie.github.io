@@ -82,7 +82,7 @@ header > h1 {
 #feat-proj{
 	float: left;
 	width: 45%;
-	height: 40em;
+	height: 45em;
 	border: 2px solid black;
 	background-color: #aeb3b7;
 	margin-left: 7%;
@@ -95,7 +95,7 @@ header > h1 {
 #recent-post{
 	float: right;
 	width: 30%;
-	height: 40em;
+	height: 45em;
 	border: 2px solid black;
 	background-color: #aeb3b7;
 	margin-right: 10%;

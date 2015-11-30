@@ -72,16 +72,16 @@ header > h1 {
 
 #proj-head{
 	text-decoration: underline;
-	font-size: 20px;
+	font-size: 1.5em;
 	float: left;
-	margin-left: 8em;
+	margin-left: 10%;
 }
 
 #post-head{
 	text-decoration: underline;
-	font-size: 22px;
+	font-size: 1.5em;
 	float: right;
-	margin-right: 15em;
+	margin-right: 25%;
 }
 
 #feat-proj{

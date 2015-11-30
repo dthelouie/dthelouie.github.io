@@ -147,16 +147,6 @@ footer{
 	background-color: #c9cccf
 }
 
-#prev{
-	float: left;
-	margin-left: 20%;
-}
-
-#next{
-	float: right;
-	margin-right: 20%;
-}
-
 .post-preview{
 	font-size: 15px;
 }

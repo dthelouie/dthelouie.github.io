@@ -22,33 +22,6 @@ aside a:hover{
 	text-decoration: none;
 }
 
-.post{
-	border: 2px solid black;
-	padding: 20px;
-	float: right;
-	width: 55%;
-	margin-top: 30px;
-	margin-right: 21%;
-	clear: both;
-	margin-bottom: 20px;
-	background-color: #aeb3b7;
-}
-
-.plus-min{
-	position: relative;
-	clear: both;
-}
-
-.plus-min a{
-	color: black;
-	border: 1px solid black;
-	background-color: #aeb3b7
-}
-.plus-min a:hover{
-	color: black;
-	background-color: #c9cccf
-}
-
 #prev{
 	float: left;
 	margin-left: 20%;
@@ -57,28 +30,6 @@ aside a:hover{
 #next{
 	float: right;
 	margin-right: 20%;
-}
-
-.post-preview{
-	font-size: 15px;
-}
-
-.section-title{
-margin-left: 15em;
-}
-
-.post-title{
-	font-size: 25px;
-	color: black;
-	text-decoration: underline;
-}
-.post-title a{
-	font-size: 25px;
-	color: black;
-}
-
-.post-date{
-	font-size: 15px;
 }
 
 .post-pic{

@@ -1,7 +1,7 @@
 h2{
-	margin-left: 8em;
+	margin-left: 6em;
 	text-decoration: underline;
-	font-size: 2em;
+	font-size: 40px;
 }
 
 aside{
@@ -36,5 +36,8 @@ aside a:hover{
 	width:50%;
 }
 
-
+.about-me{
+	font-weight: bold;
+	font-size: 18px;
+}
 

@@ -72,11 +72,11 @@ header > h1 {
 
 #proj-head{
 	text-decoration: underline;
-	font-size: 1.5em;}
+	font-size: 25px;}
 
 #post-head{
 	text-decoration: underline;
-	font-size: 1.5em;
+	font-size: 30px;
 }
 
 #feat-proj{
@@ -173,7 +173,17 @@ margin-left: 15em;
 	width: 100%;
 }
 
-
+.info{
+	border: 2px solid black;
+	padding: 20px;
+	float: right;
+	width: 70%;
+	margin-top: 30px;
+	margin-right: 15%;
+	clear: both;
+	margin-bottom: 20px;
+	background-color: #aeb3b7;
+}
 
 
 

@@ -190,3 +190,14 @@ margin-left: 15em;
 	font-size: 18px;
 }
 
+.info a{
+	color: #b30000;
+}
+
+.info a:hover{
+	color: #990000;
+}
+
+.info a:visited{
+	color: #800000;
+}

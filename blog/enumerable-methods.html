@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    Ruby: Enumerable Methods
+</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <meta charset="UTF-8">
+</head>
+<header>
+    <img id="fixie" src="../imgs/fixie.jpg" alt="fixie"/>
+    <img id="profile-pic" src="../imgs/profile-picture.jpg" alt="David Louie"/>
+    <h1>David Louie</h1>
+    <nav>
+        <ul id="navbar">
+        <li class="odd"><a href="../index.html">Home</a></li>
+        <li class="even"><a href="../about-me/index.html">About Me</a></li>
+        <li class="odd"><a href="../projects/index.html">Projects</a></li>
+        <li class="even"><a href="../resume/index.html">Resume</a></li>
+        <li class="odd"><a href="index.html">Blog</a></li>
+        <li class="even"><a href="../contact/index.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main>
+        <h2>Blog Post #4</h2>
+        <article>
+            <section class="post">
+                <header>
+                    <h3 class="post-title">Ruby: Enumerable Methods</h3>
+                    <h4 class="post-date">December 10, 2015</h4>
+                </header>
+    <img class="prev-pic" src="../imgs/each-hash.jpg" alt="each-hash"/>
+    <p>
+        This week we got to have some more practice with Ruby.  We learned how to modify arrays and strings with methods, and store more complex information with hashes.  We also learned about object classes and how each class has specific methods that can be applied to them.  From there, we learned how to make our own classes and how to define methods that could be used for them.  Two of the methods I learned about were each, and map.
+    </p>
+    <p>
+        The each and map methods are very similar.  They're both iterators, and they apply a block of code to each item in the object that they're being applied to.  Their main difference is what happens after the block is done running.  With the each method, after the block runs, it will return the original object without storing the block's results, but is usually used for its side effects.  If you want to run the each method and you want to use the index of each element of the object as a factor in your results, you could use the method, each_with_index.  The map method will return an array filled with the results of the block of code that's being applied to the object.  Map can also be used as collect, as they have the same effect.  
+    </p>
+    <p>
+        This is an example of using the "each" method:
+    </p>
+        <div><img src="../imgs/each.png" alt="each"/></div>
+    <p>
+        This is an example of using the "map" method:
+    </p>
+        <div><img src="../imgs/map.png" alt="map"/></div>
+    <p>
+        Notice how when using each, if you want to see the results of the method, you have to use a printing method, and then have the original array returned.  When using map, the results of the method are returned without having to apply another block of code.  This is a clear illustration of the difference between the two methods.  While they are both iterators, each is used for its side effects, and map is used for its results.
+    </p>
+            </section>
+        </article>
+    </main>
+    <aside>
+        <ul>
+           <!-- <li><a href="#">Most Recent Post</a></li> -->
+           <!-- <li><a href="#">Blog Post 6</a></li> -->
+           <!-- <li><a href="#">Blog Post 5</a></li> -->
+           <li><a href="enumerable-methods.html">Blog Post 4</a></li>
+           <li><a href="arrays-hashes.html">Blog Post 3</a></li>
+           <li><a href="css-concepts.html">Blog Post 2</a></li>
+           <li><a href="git.html">Blog Post 1</a></li>
+       </ul>
+    </aside>
+        <nav class="plus-min">
+            <!-- <a id="prev" href="#">&lt;Previous</a> -->
+            <a id="next" href="arrays-hashes.html">Next&gt;</a>
+        </nav>
+            <footer>
+            <span>
+            <a href="https://www.facebook.com/david.louie"><img src="../imgs/fb.png" alt="Facebook"/></a>
+            </span>
+            <span>
+            <a href="https://twitter.com/dthelouie"><img src="../imgs/twitter.png" alt="Twitter"/></a>
+            </span>
+            <span>
+                    <a href="https://www.linkedin.com/in/david-louie-67332357"><img src="../imgs/linkedin.png" alt="LinkedIn"/></a>
+             </span>
+             <span>
+                 <a href="https://github.com/dthelouie"><img src="../imgs/github.png" alt="GitHub"/></a>
+                     </span>
+                     <span>
+                <a href="httpshttps://www.instagram.com/dthelouie/"><img src="../imgs/instagram.png" alt="Instagram"/></a>
+                 </span>
+            <span>
+                <a href="https://plus.google.com/101603699243756968701/posts"><img src="../imgs/google-plus.png" alt="Google+"/></a>
+                 </span>
+                </footer>
+    </body>
+</html>

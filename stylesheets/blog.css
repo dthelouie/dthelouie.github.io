@@ -14,11 +14,11 @@ aside{
 }
 
 aside a{
-	color: blue;
+	color: #b30000;
 }
 
 aside a:hover{
-	color: blue;
+	color: #990000;
 	text-decoration: none;
 }
 
@@ -37,4 +37,6 @@ aside a:hover{
 }
 
 
-
+#call-fantasy{
+	margin-bottom: 4em;
+}

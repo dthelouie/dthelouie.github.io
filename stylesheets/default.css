@@ -205,3 +205,8 @@ margin-left: 15em;
 .proj-pic{
 	height: 20em;
 }
+
+.gist{
+	height: 30em;
+	overflow: scroll;
+}

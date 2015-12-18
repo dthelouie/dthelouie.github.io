@@ -40,3 +40,9 @@ aside a:hover{
 #call-fantasy{
 	margin-bottom: 4em;
 }
+
+.gist{
+	height: 20em;
+	overflow: scroll;
+	border: 2px solid-black;
+}

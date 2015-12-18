@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    Ruby: Classes
+</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <meta charset="UTF-8">
+</head>
+<header>
+    <img id="fixie" src="../imgs/fixie.jpg" alt="fixie"/>
+    <img id="profile-pic" src="../imgs/profile-picture.jpg" alt="David Louie"/>
+    <h1>David Louie</h1>
+    <nav>
+        <ul id="navbar">
+        <li class="odd"><a href="../index.html">Home</a></li>
+        <li class="even"><a href="../about-me/index.html">About Me</a></li>
+        <li class="odd"><a href="../projects/index.html">Projects</a></li>
+        <li class="even"><a href="../resume/index.html">Resume</a></li>
+        <li class="odd"><a href="index.html">Blog</a></li>
+        <li class="even"><a href="../contact/index.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main>
+        <h2>Blog Post #5</h2>
+        <article>
+            <section class="post">
+                <header>
+                    <h3 class="post-title">Ruby: Classes</h3>
+                    <h4 class="post-date">December 17, 2015</h4>
+                </header>
+    <img class="prev-pic" src="../imgs/class-init.jpg" alt="class-init"/>
+    <p>
+        With this week's material, we got to learn some new concepts in Ruby.  We learned more about making classes, as well as the methods that we can write to be applied to them and how to read, and modify instance variables from outside of the class.  Before I go into examples, I'm going to talk about classes and what they are.
+    <p>
+        Classes tell us what kind of object we are looking at, and what type of methods we can use on these objects.  For instance, this whole time we've been using strings, arrays, integers, and hashes in our code.  These are all objects that belong to individual classes.  If you were to look each one up on the Ruby Docs, you would find a whole page dedicated to each class featuring a list of all the methods you could use on each class with short examples of how to use them.  
+    </p>
+    <p>
+        Classes also use a different type of variable, and these variables are available for use by all methods across the class.  These are called instance variables.  They are easily recognizable, as they all start with the "@" symbol.  This allows other methods within the class to access the data that is stored on them, as well as the ability to manipulate their data.  Classes can also make use of attribute readers, writers, and accessors.  These attribute methods allow us to read and write the value of the instance variables they're connected to directly, and outside of the class.  Based on the type of attribute method that a variable is connected to, it can only be read or written, or both.  Using attr_reader will allow us to read the variable but not write to it, while attr_writer will allow us to write but not read it.  Using attr_accessor will allow you to both.  For this blog post, I made an example of a class with its own instance variables, methods, and attribute methods.
+    </p>
+    <p>
+        Here is the link: <a href="https://github.com/dthelouie/phase-0/blob/master/week-6/sample-class.rb">GitHub</a>
+    </p>
+    <p>
+       Within this code, you'll find a couple of hashes, which will be used for setting a fantasy basketball roster, as well as adding and dropping players.  The name of the league, "Retirement Year" is a fantasy basketball league that I'm a part of during this NBA season.  The list of players is mostly made up of players that I have on my team, and the rest are players that I wish I had on my team, but anyway let's dive into this.
+    </p>
+    <p>
+        Before I initialize my class, I declare a few attribute methods.  I used attr_reader for the league name, since that's something that I won't want someone to change, attr_writer for my favorite team in case I want to change my favorite team, and attr_accessor for my name and my team's name, so that if I ever decided to give my team away, the owner's name and the team name could easily be changed.  When initializing my class, I add the instance variables that I am connecting my attribute methods to, and I create hashes for the team's roster (with arrays to note what positions they play), the team's active roster, and the bench.  After this, I create my instance methods.  The active roster and the bench is what we'll be modifying so that we can accumulate stats for the season, so I created methods for starting a player, benching players, adding players, and dropping players from our team.  I also have methods that show us our full roster, our active roster, and our bench.  These methods can be called exactly the same way we call methods on other class objects.
+    </p>
+    <p>
+        Now let's test out some of these methods and set our starters with "start_player", set our bench with "bench_player", and make it show us our starters and bench with "active_roster" and "show_bench".
+    </p>
+        <div><img id="call-fantasy" src="../imgs/call-fantasy.png" alt="call-fantasy"/>
+        <img id="fantasy-terminal" src="../imgs/fantasy-terminal.png" alt="fantasy-terminal"/></div>
+    <p>
+        Now to demonstrate how instance variables and attribute methods work, I will call the owner name and the team name, and then I will change the owner name.  Since these are instance variables that have attr_readers and attr_accessors attached to them, they will comply, but watch what happens if I try to ask what my favorite team is.
+    </p>
+        <div><img src="../imgs/attr-methods.png" alt="attr-methods"/>
+        <img src="../imgs/attr-terminal.png" alt="attr-terminal"/></div>
+    <p>
+        Notice how when I try to call my favorite team, we get a NoMethodError.  This is because you can't read the data in an instance variable if it's attached to an attr_writer.  You can change what the variable's value is, but you can't see it or call it as you would with instance variables that are attached to attr_readers or attr_accessors.
+    </p>
+    <p>
+        I hope you learned a lot about creating classes and writing instance methods with instance variables from this post!  If you want to test out the other methods in my class like "add_player" or "drop_player", you're more than welcome to copy it and try them on your own.  Thanks for reading!
+    </p>
+            </section>
+        </article>
+    </main>
+    <aside>
+        <ul>
+           <!-- <li><a href="#">Most Recent Post</a></li> -->
+           <!-- <li><a href="#">Blog Post 6</a></li> -->
+           <li><a href="ruby-classes.html">Blog Post 5</a></li>
+           <li><a href="enumerable-methods.html">Blog Post 4</a></li>
+           <li><a href="arrays-hashes.html">Blog Post 3</a></li>
+           <li><a href="css-concepts.html">Blog Post 2</a></li>
+           <li><a href="git.html">Blog Post 1</a></li>
+       </ul>
+    </aside>
+        <nav class="plus-min">
+            <!-- <a id="prev" href="#">&lt;Previous</a> -->
+            <a id="next" href="arrays-hashes.html">Next&gt;</a>
+        </nav>
+            <footer>
+            <span>
+            <a href="https://www.facebook.com/david.louie"><img src="../imgs/fb.png" alt="Facebook"/></a>
+            </span>
+            <span>
+            <a href="https://twitter.com/dthelouie"><img src="../imgs/twitter.png" alt="Twitter"/></a>
+            </span>
+            <span>
+                    <a href="https://www.linkedin.com/in/david-louie-67332357"><img src="../imgs/linkedin.png" alt="LinkedIn"/></a>
+             </span>
+             <span>
+                 <a href="https://github.com/dthelouie"><img src="../imgs/github.png" alt="GitHub"/></a>
+                     </span>
+                     <span>
+                <a href="https://www.instagram.com/dthelouie/"><img src="../imgs/instagram.png" alt="Instagram"/></a>
+                 </span>
+            <span>
+                <a href="https://plus.google.com/101603699243756968701/posts"><img src="../imgs/google-plus.png" alt="Google+"/></a>
+                 </span>
+                </footer>
+    </body>
+</html>

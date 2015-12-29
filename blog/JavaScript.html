@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    Hashes vs. Objects
+</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <meta charset="UTF-8">
+</head>
+<header>
+    <img id="fixie" src="../imgs/fixie.jpg" alt="fixie"/>
+    <img id="profile-pic" src="../imgs/profile-picture.jpg" alt="David Louie"/>
+    <h1>David Louie</h1>
+    <nav>
+        <ul id="navbar">
+        <li class="odd"><a href="../index.html">Home</a></li>
+        <li class="even"><a href="../about-me/index.html">About Me</a></li>
+        <li class="odd"><a href="../projects/index.html">Projects</a></li>
+        <li class="even"><a href="../resume/index.html">Resume</a></li>
+        <li class="odd"><a href="index.html">Blog</a></li>
+        <li class="even"><a href="../contact/index.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main>
+        <h2>Blog Post #4</h2>
+        <article>
+            <section class="post">
+                <header>
+                    <h3 class="post-title">Hashes vs. Objects</h3>
+                    <h4 class="post-date">December 28, 2015</h4>
+                </header>
+    <img class="prev-pic" src="../imgs/object.jpg" alt="object"/>
+    <p>
+        For the last three weeks we've been learning about Ruby to perform simple tasks, but this week we've begun learning JavaScript.  Not related at all to the language, Java, JavaScript was named simply as a marketing ploy to increase interest in the language at its creation.  We've learned a little about how JavaScript works, and how it's very similar to what we've learned in Ruby.  They have similar structures and use a lot of the same types of data such as strings, arrays, and integers, and they can all be managed in the same ways.  One major difference in data storage in these two languages is that while Ruby uses hashes for key/value data pairing, JavaScript uses objects to store multiple layers of information.
+    </p>
+    <p>
+        We all know how hashes in Ruby work, they have keys that return values and thos values can be any type of class object.  JavaScript's objects can also hold attributes with values.  JavaScript has some more mobility in this area, as the object can also be treated similarly to Ruby's classes.  JavaScript objects can contain variables that can be accessed and manipulated, as well as functions that use the object's stored data.  This feature is similar to the way we can add attribute accessors and custom methods to our classes in Ruby.  
+    </p>
+    <p>
+        Here's a short example of a JavaScript object that houses attributes and functions.  It comes from one of this week's challenges, "Design a Basic Game".
+    </p>
+        <script class="gist" src="https://gist.github.com/dthelouie/1a377e53dcc4443a1f34.js"></script>
+    <p>
+        In this code, I have created an object called "partner" to go along with the hero of the game that I designed.  The partner has attribute values for a name, strength, health, and whether they are alive or not.  There are also a few functions that can be done by the partner like searching the room for items, and subfunctions specifying effects for what the partner had found in the room.  They can all be called with "partner.attribute" or "partner.function()"
+    <p>
+        In Ruby, you have to add an attribute modifier or accessor for your attributes to be accessible outside of your class, but in JavaScript, they're all accessible for reading and manipulation.  They can even be modified and referred to by other objects by calling them with the syntax, "object.attribute", just as you do with accessible attributes in Ruby.  
+    </p> 
+    <p>
+        I think it's fair to say that JavaScript's objects are more versatile than Ruby's hashes in the sense that there are more types of data that can be stored in them.  While objects can house variables, strings, arrays, and integers the same way hashes do, they can also house functions that can be applied to the data it stores and manipulate other objects.  
+    </p>
+            </section>
+        </article>
+    </main>
+    <aside>
+        <ul>
+           <!-- <li><a href="#">Most Recent Post</a></li> -->
+           <li><a href="JavaScript.html">Blog Post 6</a></li>
+           <li><a href="ruby-classes.html">Blog Post 5</a></li>
+           <li><a href="enumerable-methods.html">Blog Post 4</a></li>
+           <li><a href="arrays-hashes.html">Blog Post 3</a></li>
+           <li><a href="css-concepts.html">Blog Post 2</a></li>
+           <li><a href="git.html">Blog Post 1</a></li>
+       </ul>
+    </aside>
+        <nav class="plus-min">
+            <!-- <a id="prev" href="#">&lt;Previous</a> -->
+            <a id="next" href="arrays-hashes.html">Next&gt;</a>
+        </nav>
+            <footer>
+            <span>
+            <a href="https://www.facebook.com/david.louie"><img src="../imgs/fb.png" alt="Facebook"/></a>
+            </span>
+            <span>
+            <a href="https://twitter.com/dthelouie"><img src="../imgs/twitter.png" alt="Twitter"/></a>
+            </span>
+            <span>
+                    <a href="https://www.linkedin.com/in/david-louie-67332357"><img src="../imgs/linkedin.png" alt="LinkedIn"/></a>
+             </span>
+             <span>
+                 <a href="https://github.com/dthelouie"><img src="../imgs/github.png" alt="GitHub"/></a>
+                     </span>
+                     <span>
+                <a href="https://www.instagram.com/dthelouie/"><img src="../imgs/instagram.png" alt="Instagram"/></a>
+                 </span>
+            <span>
+                <a href="https://plus.google.com/101603699243756968701/posts"><img src="../imgs/google-plus.png" alt="Google+"/></a>
+                 </span>
+                </footer>
+    </body>
+</html>

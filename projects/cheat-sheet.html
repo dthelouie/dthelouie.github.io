@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    My Cheat Sheet
+</title>
+<link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+<link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+<meta charset="UTF-8">
+</head>
+<header>
+    <img id="fixie" src="../imgs/fixie.jpg" alt="fixie"/>
+    <img id="profile-pic" src="../imgs/profile-picture.jpg" alt="David Louie"/>
+    <h1>David Louie</h1>
+    <nav>
+        <ul id="navbar">
+        <li class="odd"><a href="../index.html">Home</a></li>
+        <li class="even"><a href="../about-me/index.html">About Me</a></li>
+        <li class="odd"><a href="../projects/index.html">Projects</a></li>
+        <li class="even"><a href="../resume/index.html">Resume</a></li>
+        <li class="odd"><a href="index.html">Blog</a></li>
+        <li class="even"><a href="../contact/index.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+  <body>
+    <header>
+    <h2 id="cheat-sheet">My Cheat Sheet</h2>
+    </header>
+    <article class="post">
+      <h3 class="post-title">Ruby</h3>
+      <p class="post-preview">
+        <ul>
+            <li>Ruby is a scripting language</li>
+            <li>Uses elements such as Hashes, Arrays, Strings, and Integers to accomplish tasks</li>
+            <li>Integers are whole numbers, as opposed to floats which can have decimals.  Integers can be transformed into floats with the method ".to_f"</li>
+            <li>Strings are any text housed between two of the same type of quotation marks</li>
+            <li>Arrays are collections of other elements housed between two square braces.  Arrays can even hold other arrays!</li>
+            <li>Hashes are similar to arrays, but while arrays use numbers for indexing data, hashes use any other element that leads to another element.  Elements in hashes come in key/value pairs.  They are housed in curly braces.</li>
+            <li>Variables are also an element that is used a lot in Ruby.  Variables are name values that can be assigned to other elements.  If you ask for the variable's name, it will give you the value that it's been assigned to.</li>
+            <li>We use if statements to execute certain blocks of code when a certain conditon is true, and if it's false, we use an else statement to execute another block of code.  If/else statements can account for many different conditions in the same situation. (if condition, execute block. elsif other condition, execute other block. else, execute other block. end</li>
+            <li>The keyword "while" is used for looping, and often iterating. (while this condition == true, execute block of code. end.)</li>
+            <li>Methods can be created to avoid repeating a certain block of code multiple times.  (def method_name(argument) execute block. end)</li>
+            <li>The method "each" can also be used for iterating</li>
+            <li>Each type of object has its own set of methods that can be applied to them, which can be found in the Ruby Docs at <a href="ruby-doc.org">ruby-doc.org</a>.</li>
+            <li>You can create new objects by declaring a class.  You need to define an initialization method, and methods that can be applied to the class.  You can then treat it like any other object with its methods.</li>
+        </ul>
+      </p>
+    </article>
+    <article class="post">
+      <h3 class="post-title">JavaScript</h3>
+      <p class="post-preview">
+        <ul>
+            <li>JavaScript is very similar to Ruby, in the sense that it uses all of the same elements and can accomplish many of the same tasks.</li>
+            <li>Variables are declared with "var" (var array = [])</li>
+            <li>In most cases, Ruby uses the keyword "end" to finish statements.  In JavaScript, blocks of code that are to be executed in statements are housed in curly braces.</li>
+            <li>Looping can be done with "while" (while (condition){execute this block})as it is in Ruby, or with "for"(for (init var; until condition == true; increment variable){execute block}.</li>
+            <li>Functions are defined similarly to the way methods are in Ruby, except they are set up the same way as variables.  (function = func_name(argument){execute block}</li>
+            <li>Objects can be created to store information similar to the way that Ruby's hashes do.  You assign a key to value, and when you call the key, the value is returned.  Functions can be added to objects just like methods in Ruby classes.</li>
+        </ul>
+      </p>
+    </article>
+    <article class="post">
+      <h3 class="post-title">HTML</h3>
+      <p class="post-preview">
+        <ul>
+            <li>HTML: HyperText Markup Language</li>
+            <li>HTML is a language that is used to create website pages.  It is interpreted by browsers and places links, text, and images within tags to present content.</li>
+            <li>Individual types of content are housed between tags (&lt;tag&gt;CONTENT&lt;/tag&gt;)</li>
+            <li>Heading tags such as h1, h2, h3, etc. are used to note the hierarchy of headings on the page</li>
+            <li>The "p" tag is used for large sets of text, such as the main articles of a page.</li>
+            <li>The "a" tag is used for links (&lt;a href="link"&gt;"alt-text"&lt;/a&gt;)</li>
+            <li>The "img" tag is used for presenting images on a page.  (&lt;img src="link or relative path" alt="alt-text"/&gt;)</li>
+            <li>Unordered lists can be opened with the "ul" tag, and ordered lists with the "ol" tag.  Elements within the list are noted with the "li" tag.</li>
+            <li>New semantic tags in HTML5 are used for clearer notation of what the content is.  These tags include "article", "aside", "footer", "header", "main", "nav", "section", and "summary".</li>
+        </ul>
+      </p>
+    </article>
+    <article class="post">
+      <h3 class="post-title">CSS</h3>
+      <p class="post-preview">
+        <ul>
+            <li>CSS: Cascading Style Sheets</li>
+            <li>CSS is used to position and style elements in an HTML page.</li>
+            <li>CSS is held in a stylesheet, separately from the main HTML page.</li>
+            <li>Some styling properties that could be applied are color, font-family, font-size, height, width, background-color, text-decoration, border-radius, border, text-align, display, position, margin, opacity, font-weight, or float.</li>
+            <li>Properties that use size or space can be measured in pixels or em's</li>
+            <li>The syntax of CSS properties is selector{property:value;}</li>
+            <li>Classes and IDs can be applied to HTML elements to edit specific elements, or a group of elements.</li>
+            <li>Positioning properties include display, margin, border, padding, content, float, and clear</li>
+        </ul>
+      </p>
+    </article>
+    <article class="post">
+      <h3 class="post-title">Git</h3>
+      <p class="post-preview">
+        <ul>
+            <li>Git is used for version control of code that we write.  It keeps track of changes in documents that we write.</li>
+            <li>We use GitHub for a centralized location to push our code to, and efficiently promote collaborative work.</li>
+            <li>Git repositories can exist locally and remotely.  We work on our individual computers and push to our remote repositories so others can access our files.</li>
+            <li>Changes are tracked by "commits" that are associated with each version of a document.</li>
+            <li>All git commands start with "git" and are executed in the command line.</li>
+            <li>Branches are used to separate changes from the master version of the document.</li>
+            <li>Keep track of branches with "git branch"</li>
+            <li>Create and move to a new branch with "git checkout -b BRANCH-NAME"</li>
+            <li>Switch branches with "git checkout BRANCH-NAME"</li>
+            <li>Create a repository with "git init"</li>
+            <li>Check the status of changed documents with "git status"</li>
+            <li>Commit changes with the commands, "git add .", "git commit -m 'COMMIT MESSAGE'"</li>
+            <li>Track commits with "git log"</li>
+            <li>After committing a change, push it to a remote repository with "git push origin REPO-NAME"</li>
+            <li>Merge branch in a repository to the master branch when ready on GitHub, and then pull to keep your local repository up to date.</li>
+            <li>Fetch and merge changes with "git pull"</li>
+            <li>Delete unwanted branches with "git branch -d BRANCH-NAME"</li>
+        </ul>
+      </p>
+      </article>
+      <article class="post">
+      <h3 class="post-title">SQL</h3>
+      <p class="post-preview">
+        <ul>
+            <li>SQL: Structured Query Language</li>
+            <li>SQL is used for fetching information from databases.</li>
+            <li>Data is held on tables</li>
+            <li>Create a new table with "CREATE TABLE"</li>
+            <li>Add a new row with INSERT category-name INTO table-name</li>
+            <li>Gather information with SELECT category-name FROM table-name</li>
+            <li>Edit rows in tables with UPDATE.</li>
+            <li>Change existing tables with ALTER TABLE.</li>
+            <li>Delete rows in tables with DELETE FROM</li>
+            <li>The WHERE operator filters results of a query based on specified conditions</li>
+            <li>LIKE and BETWEEN are used in the WHERE clause.</li>
+            <li>ORDER BY (ASC and DESC) will sort results in ascending or descending order</li>
+            <li>LIMIT will specify the maximum number of rows that will be returned by a query.</li>
+        </ul>
+      </p>
+      </article>
+   <footer>
+            <span>
+            <a href="https://www.facebook.com/david.louie"><img src="../imgs/fb.png" alt="Facebook"/></a>
+            </span>
+            <span>
+            <a href="https://twitter.com/dthelouie"><img src="../imgs/twitter.png" alt="Twitter"/></a>
+            </span>
+            <span>
+                    <a href="https://www.linkedin.com/in/david-louie-67332357"><img src="../imgs/linkedin.png" alt="LinkedIn"/></a>
+             </span>
+             <span>
+                 <a href="https://github.com/dthelouie"><img src="../imgs/github.png" alt="GitHub"/></a>
+                     </span>
+                     <span>
+                <a href="https://www.instagram.com/dthelouie/"><img src="../imgs/instagram.png" alt="Instagram"/></a>
+                 </span>
+            <span>
+                <a href="https://plus.google.com/101603699243756968701/posts"><img src="../imgs/google-plus.png" alt="Google+"/></a>
+                 </span>
+                </footer>
+  </body>
+</html>

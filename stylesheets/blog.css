@@ -2,6 +2,7 @@ h2{
 	margin-left: 6em;
 	text-decoration: underline;
 	font-size: 40px;
+	clear: both;
 }
 
 aside{
@@ -14,7 +15,7 @@ aside{
 }
 
 aside a{
-	color: #b30000;
+	color: #800000;
 }
 
 aside a:hover{

@@ -64,7 +64,7 @@ $(document).ready(function() {
             }
         };
     });
-    
+
 	game = new Game("0000000000000000")
 
 	updateGrid = function(game){
@@ -110,19 +110,19 @@ $(document).ready(function() {
 	})
 
 
-	$(document).on("swipeleft", function(){
+	$('#game-container').on("swipeleft", function(){
 		game.left()
 		updateGrid(game)
 	})
-	$(document).on("swiperight", function(){
+	$('#game-container').on("swiperight", function(){
 		game.right()
 		updateGrid(game)
 	})
-	$(document).on("swipeup", function(){
+	$('#game-container').on("swipeup", function(){
 		game.up()
 		updateGrid(game)
 	})
-	$(document).on("swipedown", function(){
+	$('#game-container').on("swipedown", function(){
 		game.down()
 		updateGrid(game)
 	})
